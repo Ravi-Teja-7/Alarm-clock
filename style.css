@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #7EB2DD;
+}
+#quote{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px;
+    position: relative;
+    top:0px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.alarm{
+    border: 3px solid #0C243C;
+    border-radius: 8px;
+}
+
+.datetime{
+    color: #fff;
+/*    background: #7EB2DD;*/
+    background: #0C243C;
+    font-family: "Segoe UI", sans-serif;
+    width: 340px;
+    padding: 15px 10px;
+    transition: 0.5s;
+    transition-property: background,box-shadow;
+}
+
+.datetime:hover{
+    color:#fff;
+    background: #0C243C;
+    box-shadow: 0 0 30px black;
+    border-radius: 5px;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    max-width: 0 6px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.time span:last-child{
+/*    background: #0C243C;*/
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+hr{
+    border: 1px solid #0C243C;
+    margin: 20px auto;
+}
+
+.setAlarm{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.column select{
+    background: #0C243C;
+    color: #fff;
+    text-align: center;
+    padding: 8px 4px;
+    border: 1px solid #7EB2DD;
+    border-radius: 18px;
+}
+
+
+#btn-setAlarm, .btn-delete, #stopAlarm{
+    padding: 5px;
+    color: #fff;
+    background: #0C243C;
+    border: 1px solid #0C243C;
+    border-radius: 18px;
+}
+
+#stopAlarm{
+    visibility: hidden;
+    width: 100px;
+    margin: 0 34%;
+}
+
+.btn-delete{
+    margin-left: 50px;
+}
+
+#btn-setAlarm:hover, .btn-delete:hover, #stopAlarm:hover{
+    cursor: pointer;
+    background: #0C243C;
+    box-shadow: 0 0 30px #0C243C;
+}
+
+h3{
+    color: #0C243C;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.alarmList{
+    font-family:"Segoe UI", sans-serif;
+    margin: 14px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.alarmLog{
+    color: #0C243C;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto;
+}
